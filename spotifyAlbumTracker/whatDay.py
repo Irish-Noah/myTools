@@ -68,7 +68,7 @@ def count_new_albums(albums):
         compare_date = datetime.datetime(2025, 1, 1)
         if added_date >= compare_date: 
             total_2025 += 1
-    return total_2025 - 2
+    return total_2025 - 1 # adjusting for the 1 LP and the album that I added from a previous year
     
 
 def main(): 
