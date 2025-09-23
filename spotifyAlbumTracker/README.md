@@ -1,0 +1,2 @@
+### How to use the Spotify Tracker
+Place the REDIRECT_URI value from the .env file into your browser. Hit enter and copy the 'code' section in the reponse URL. Paste the code to the CODE value in .env and run the program like a normal python program!
