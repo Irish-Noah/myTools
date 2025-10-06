@@ -1,0 +1,317 @@
+{
+  "grp_id": 99,
+  "pname": "dtc_ecm_tbm_global",
+  "plans": [
+    {
+      "period": 1000,
+      "bundle_window": 1,
+      "data": [
+        {
+          "name": "ECM_uniqueID",
+          "param": "ECMUploadID",
+          "source": "ref"
+        },
+        {
+          "name": "FDCAN8-1800FF00-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "note": "CAN_C-1800FF00-18DA10F1-18DAF110",
+          "source": "tbm-diag",
+          "param": "10-1800FF00-KWP"
+        },
+        {
+          "name": "FDCAN8-1A87-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "note": "CAN_C-1A87-18DA10F1-18DAF110",
+          "source": "tbm-diag",
+          "param": "10-1A87-UDS"
+        },
+        {
+          "name": "FDCAN8-2156-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-2156-KWP"
+        },
+        {
+          "name": "FDCAN8-221FDC-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-221FDC-KWP"
+        },
+        {
+          "name": "FDCAN8-220137-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-220137-KWP"
+        },
+        {
+          "name": "1200",
+          "source": "wait"
+        },
+        {
+          "name": "FDCAN8-2105-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-2105-KWP"
+        },
+        {
+          "name": "FDCAN8-220320-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-220320-KWP"
+        },
+        {
+          "name": "FDCAN8-221FCE-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-221FCE-KWP"
+        },
+        {
+          "name": "FDCAN8-221FCF-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-221FCF-KWP"
+        },
+        {
+          "name": "FDCAN8-221FD0-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-221FD0-KWP"
+        },
+        {
+          "name": "FDCAN8-221FD1-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-221FD1-KWP"
+        },
+        {
+          "name": "FDCAN8-221FD2-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-221FD2-KWP"
+        },
+        {
+          "name": "FDCAN8-221FD3-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-221FD3-KWP"
+        },
+        {
+          "name": "FDCAN8-221FD4-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-221FD4-KWP"
+        },
+        {
+          "name": "FDCAN8-221FD5-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-221FD5-KWP"
+        },
+        {
+          "name": "FDCAN8-221FD6-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-221FD6-KWP"
+        },
+        {
+          "name": "FDCAN8-221FD7-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-221FD7-KWP"
+        },
+        {
+          "name": "FDCAN8-221FD8-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-221FD8-KWP"
+        },
+        {
+          "name": "FDCAN8-221FD9-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-221FD9-KWP"
+        },
+        {
+          "name": "FDCAN8-221FDA-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-221FDA-KWP"
+        },
+        {
+          "name": "FDCAN8-221FDB-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-221FDB-KWP"
+        },
+        {
+          "name": "FDCAN8-221FCC-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-221FCC-KWP"
+        },
+        {
+          "name": "FDCAN8-221FCD-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-221FCD-KWP"
+        },
+        {
+          "name": "FDCAN8-2102-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-2102-KWP"
+        },
+        {
+          "name": "FDCAN8-2103-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-2103-KWP"
+        },
+        {
+          "name": "FDCAN8-2104-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-2104-KWP"
+        },
+        {
+          "name": "FDCAN8-2106-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-2106-KWP"
+        },
+        {
+          "name": "FDCAN8-2107-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-2107-KWP"
+        },
+        {
+          "name": "FDCAN8-2101-18DA10F1-18DAF110-0x10-KWP",
+          "flags": [
+            "ignore_E#x",
+            "persist-ref"
+          ],
+          "source": "tbm-diag",
+          "param": "10-2101-KWP"
+        }
+      ],
+      "filters": [
+        {
+          "operands": [
+            {
+              "param": "ECMUploadID",
+              "source": "ref"
+            },
+            {
+              "param": "ECM_uniqueID",
+              "source": "ref"
+            }
+          ],
+          "operator": "STRNEQ",
+          "source": "synth"
+        },
+        {
+          "operands": [
+            {
+              "param": "ECMUploadID",
+              "source": "ref"
+            }
+          ],
+          "operator": "change",
+          "source": "monitor"
+        },
+        {
+          "param": "ref",
+          "source": "flagECM"
+        }
+      ],
+      "type": "poll",
+      "backup_window": 10,
+      "transfer_window": 1
+    }
+  ]
+}
