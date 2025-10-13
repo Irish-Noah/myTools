@@ -2,6 +2,7 @@ import datetime
 import requests
 import os
 import json
+import webbrowser
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -9,7 +10,7 @@ load_dotenv()
 CLIENT_ID = os.getenv('CLIENT_ID')
 CLIENT_SECRET = os.getenv('CLIENT_SECRET')
 REDIRECT_URI = os.getenv('REDIRECT_URL')
-CODE = os.getenv('CODE')
+CODE_URL = os.getenv('CODE_URL')
 
 output_path = os.path.join(os.path.dirname(__file__), 'output.json')
 
@@ -72,10 +73,15 @@ def count_new_albums(albums):
     
 
 def main(): 
-    token = get_spotify_token(CLIENT_ID, CLIENT_SECRET, CODE, REDIRECT_URI)
+
+    # Open the code retrieval url in my default browser and paste it into the terminal
+    webbrowser.open(CODE_URL)
+    code = input('Enter the code from the opened web browser: ') 
+
+    token = get_spotify_token(CLIENT_ID, CLIENT_SECRET, code, REDIRECT_URI)
     albums = get_albums_from_library(token['access_token'])
     total = count_new_albums(albums)
-    
+
     doy = int(datetime.datetime.now().strftime('%j'))
     if total < doy:
         print(f"It is day {doy} of {datetime.datetime.now().strftime('%Y')} and I have listened to {total} albums this year! Pick up the pace dude...")  
