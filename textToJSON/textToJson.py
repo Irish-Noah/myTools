@@ -21,9 +21,10 @@ def create_json(file):
         device_match = re.search(r':\s*(\S+)', device)
         device_id = device_match.group(1) if device_match else 'n/a'
 
-        # Search for VIN and FIRMWARE anywhere (case-insensitive)
+        # Search for VIN, FIRMWARE, and any ERRORs anywhere (case-insensitive)
         vin_match = re.search(r'VIN:\s*(\S+)', device, re.IGNORECASE)
         firmware_match = re.search(r'FIRMWARE:\s*(\S+)', device, re.IGNORECASE)
+        error_match = re.search(r'ERROR:\s*(.+?)(?=\s+\w+:|$)', device, re.IGNORECASE)
 
         data = {
             "device_id": device_id,
@@ -31,9 +32,11 @@ def create_json(file):
             "firmware": firmware_match.group(1) if firmware_match else 'n/a'
         }
 
+        if error_match:
+            data['error'] = error_match.group(1)
+
         filtered_devices.append(data)
     
-    #print(devices[1:])
     fp.close()
     return filtered_devices
 
